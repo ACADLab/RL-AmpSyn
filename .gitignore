@@ -1,0 +1,35 @@
+# Ignore all root-directory python files (sandbox, diagnostic, tuning scripts)
+/*.py
+
+# Ignore logs and keys
+*.log
+*.txt
+*.lis
+keys.txt
+v1_counts.txt
+v2_counts.txt
+
+# Python caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Tensorboard runs (large event files)
+rl_ampsyn/runs/
+
+# OS generated files
+.DS_Store
+
+# Temporary SPICE files generated during inference/testing
+llm_*.sp
+test_*.sp
+*.sp.test
+scratch*
+
+# Artifact results (save space, can be reproduced by evaluate.py)
+# rl_ampsyn/results/
+
+# Editor files
+.vscode/
+.idea/
+rl_ampsyn/results/
